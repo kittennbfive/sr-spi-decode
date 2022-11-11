@@ -3,7 +3,7 @@ SPI-Decoder for Sigrok-captures
 
 version 0.01
 
-hacked together by kitten_nb_five
+hacked together by kittennbfive
 
 https://github.com/kittennbfive
 
