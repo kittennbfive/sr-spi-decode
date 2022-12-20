@@ -192,7 +192,7 @@ typedef enum
 
 int main(int argc, char **argv)
 {
-	fprintf(stderr, "This is an SPI-Decoder version 0.01 for Sigrok-captures.\n(c) 2021 by kitten_nb_five\nUSE AT YOUR OWN RISK!\n");
+	fprintf(stderr, "This is an SPI-Decoder version 0.01 for Sigrok-captures.\n(c) 2021 by kittennbfive\nUSE AT YOUR OWN RISK!\n");
 	
 	if(argc<3)
 	{
