@@ -1,7 +1,7 @@
 /*
 simple SPI-Decoder for Sigrok-captures
 
-version 0.02 using libsr
+version 0.03 using libsr
 
 (c) 2021-2023 by kittennbfive
 
@@ -33,7 +33,7 @@ typedef enum
 
 int main(int argc, char **argv)
 {
-	fprintf(stderr, "This is a simple SPI-Decoder for Sigrok-captures\nversion 0.02 - (c) 2021-2023 by kittennbfive - AGPLv3+ - USE AT YOUR OWN RISK!\n\n");
+	fprintf(stderr, "This is a simple SPI-Decoder for Sigrok-captures\nversion 0.03 - (c) 2021-2023 by kittennbfive - AGPLv3+ - USE AT YOUR OWN RISK!\n\n");
 	
 	if(argc<6 || argc>7)
 	{
@@ -82,7 +82,7 @@ int main(int argc, char **argv)
 		if(has_miso)
 			miso=sr_get_sample(channel_MISO, sample);
 		
-		if(!cs && cs_old)
+		if(!cs && cs_old) //reset
 		{
 			counter=8;
 			byte_mosi=0;
@@ -108,6 +108,11 @@ int main(int argc, char **argv)
 					else
 						putc(byte_miso, stdout);
 				}
+				
+				//prepare for next byte that might follow directly
+				counter=8;
+				byte_mosi=0;
+				byte_miso=0;
 			}
 		}
 		
