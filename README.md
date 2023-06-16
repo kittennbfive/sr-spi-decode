@@ -21,7 +21,7 @@ You will need [libzip](https://libzip.org/). On Debian you need `libzip-dev`. Yo
 >"print" -> print decoded values in hex  
 >"binary" -> dump decoded values as raw binary (for piping to another tool or saving into a file)
 
-As you can see it is pretty basic but it gets the job done and *fast*. I sometimes have huge captures to process and waiting like 30 minutes is just not acceptable.  
+As you can see it is pretty basic but it gets the job done and *fast*.  
   
 Beware: At this point this tool is mostly untested, expect bugs and other bad stuff.  
   
