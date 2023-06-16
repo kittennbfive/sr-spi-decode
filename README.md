@@ -2,7 +2,7 @@
 small and fast SPI-decoder for Sigrok-captures, written in C
 
 ## What is this?
-This is a small tool that parses a [Sigrok](https://sigrok.org/)-capture (.sr) containing SPI-data, extracts all the bytes that have been sent (MOSI and optionally MISO) and spit them out as hex or binary. This is version 0.02 rewritten for libsr, see below.
+This is a small tool that parses a [Sigrok](https://sigrok.org/)-capture (.sr) containing SPI-data, extracts all the bytes that have been sent (MOSI and optionally MISO) and spit them out as hex or binary. This is version 0.03 rewritten for libsr, see below.
 
 ## Licence and Disclaimer
 AGPLv3+ and NO WARRANTY!
@@ -28,7 +28,7 @@ Beware: At this point this tool is mostly untested, expect bugs and other bad st
 Version 0.02 drops the "info" mode, just open the sr-file in Pulseview or use sigrok-cli.
 
 ## Limitations
-A lot: Linux-only, CS must be active low, SPI-mode is fixed to **0** (not 1 as written before), transfersize is fixed to 8 bits and **CS must go high between two bytes**, ... However with some basic C-knowledge it should be easy and quick to adapt the code. I may upload a better version some day if i make one (=if i need one).
+A lot: Linux-only, CS must be active low, SPI-mode is fixed to **0** (not 1 as written before), transfersize is fixed to 8 bits, ... However with some basic C-knowledge it should be easy and quick to adapt the code. I may upload a better version some day if i make one (=if i need one).
 
 ## FAQ
 ### Sigrok does have a SPI-decoder already?!
