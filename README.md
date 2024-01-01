@@ -8,7 +8,7 @@ This is a small tool that parses a [Sigrok](https://sigrok.org/)-capture (.sr) c
 AGPLv3+ and NO WARRANTY!
 
 ## How to compile
-### Depencies
+### Dependencies
 You will need [libzip](https://libzip.org/). On Debian you need `libzip-dev`. You will also need my own [libsr](https://github.com/kittennbfive/libsr).
 
 ### Compiling
